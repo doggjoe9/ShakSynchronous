@@ -22,7 +22,7 @@ namespace MareSynchronos.WebAPI;
 public sealed partial class ApiController : DisposableMediatorSubscriberBase, IMareHubClient
 {
     public const string MainServer = "ShakSynchronous";
-    public const string MainServiceUri = "http://161.153.43.201:6000";
+    public const string MainServiceUri = "http://129.146.24.203:6000";
 
     private readonly DalamudUtilService _dalamudUtil;
     private readonly HubFactory _hubFactory;
