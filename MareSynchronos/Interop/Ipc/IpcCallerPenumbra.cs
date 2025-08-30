@@ -104,6 +104,7 @@ public sealed class IpcCallerPenumbra : DisposableMediatorSubscriberBase, IIpcCa
             var penumbraVersion = (_pi.InstalledPlugins
                 .FirstOrDefault(p => string.Equals(p.InternalName, "Penumbra", StringComparison.OrdinalIgnoreCase))
                 ?.Version ?? new Version(0, 0, 0, 0));
+            //                                                 1, 2, 0, 22
             penumbraAvailable = penumbraVersion >= new Version(1, 2, 0, 22);
             try
             {
@@ -216,10 +217,16 @@ public sealed class IpcCallerPenumbra : DisposableMediatorSubscriberBase, IIpcCa
         return await _dalamudUtil.RunOnFrameworkThread(() =>
         {
             var collName = "Mare_" + uid;
-            var collId = _penumbraCreateNamedTemporaryCollection.Invoke(collName);
-            logger.LogTrace("Creating Temp Collection {collName}, GUID: {collId}", collName, collId);
+            // TODO Manage this error in a better way.
+            PenumbraApiEc ec = _penumbraCreateNamedTemporaryCollection.Invoke(uid, collName, out Guid collId);
+            if (ec is not PenumbraApiEc.Success)
+            {
+                logger.LogTrace("Creating Temp Collection {collName}, GUID: {collId}", collName, collId);
+            } else
+            {
+                logger.LogError("Failed to create temp collection. Collection Name : {collName} - uid : {uid} - error {ec}", collName, uid, ec);
+            }
             return collId;
-
         }).ConfigureAwait(false);
     }
 

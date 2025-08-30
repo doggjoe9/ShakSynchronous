@@ -205,13 +205,13 @@ public partial class IntroUi : WindowMediatorSubscriberBase
             using (_uiShared.UidFont.Push())
                 ImGui.TextUnformatted("Service Registration");
             ImGui.Separator();
-            UiSharedService.TextWrapped("To be able to use Mare Synchronos you will have to register an account.");
-            UiSharedService.TextWrapped("For the official Mare Synchronos Servers the account creation will be handled on the official Mare Synchronos Discord. Due to security risks for the server, there is no way to handle this sensibly otherwise.");
-            UiSharedService.TextWrapped("If you want to register at the main server \"" + WebAPI.ApiController.MainServer + "\" join the Discord and follow the instructions as described in #mare-service.");
+            UiSharedService.TextWrapped("To be able to use Shak Synchronos you will have to register an account.");
+            UiSharedService.TextWrapped("For the official Shak Synchronos Servers the account creation will be handled on the official Shak Synchronos Discord. Due to security risks for the server, there is no way to handle this sensibly otherwise.");
+            UiSharedService.TextWrapped("If you want to register at the main server \"" + WebAPI.ApiController.MainServer + "\" join the Discord and follow the instructions as described in #register.");
 
-            if (ImGui.Button("Join the Mare Synchronos Discord"))
+            if (ImGui.Button("Join the Shak Synchronos Discord"))
             {
-                Util.OpenLink("https://discord.gg/mpNdkrTRjW");
+                Util.OpenLink("https://discord.gg/sGHJp8fk");
             }
 
             UiSharedService.TextWrapped("For all other non official services you will have to contact the appropriate service provider how to obtain a secret key.");
