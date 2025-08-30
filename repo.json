@@ -2,22 +2,21 @@
   {
     "Author": "darkarchon/shak",
     "Name": "Shak Synchronos",
+    "Punchline": "Let others see you as you see yourself.",
+    "Description": "This plugin will synchronize your Penumbra mods and current Glamourer state with other paired clients automatically.",
     "InternalName": "ShakSynchronos",
     "AssemblyVersion": "0.11.22",
-    "Description": "This plugin will synchronize your Penumbra mods and current Glamourer state with other paired clients automatically.",
-    "ApplicableVersion": "any",
+    "TestingAssemblyVersion": "0.11.22",
     "RepoUrl": "https://github.com/doggjoe9/ShakSynchronous",
-    "Tags": [
-      "customization"
-    ],
+    "ApplicableVersion": "any",
+    "DownloadCount": 0,
     "DalamudApiLevel": 13,
-    "LoadPriority": 0,
-    "IconUrl": "https://raw.githubusercontent.com/doggjoe9/ShakSynchronous/refs/heads/main/MareSynchronos/images/icon.png",
-    "Punchline": "Let others see you as you see yourself.",
-    "IsHide": "False",
-    "IsTestingExclusive": "False",
     "DownloadLinkInstall": "https://github.com/doggjoe9/ShakSynchronous/releases/download/release/latest.zip",
     "DownloadLinkTesting": "https://github.com/doggjoe9/ShakSynchronous/releases/download/release/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/doggjoe9/ShakSynchronous/releases/download/release/latest.zip"
+    "DownloadLinkUpdate": "https://github.com/doggjoe9/ShakSynchronous/releases/download/release/latest.zip",
+    "IconUrl": "https://raw.githubusercontent.com/doggjoe9/ShakSynchronous/refs/heads/main/MareSynchronos/images/icon.png",
+    "Tags": [
+      "customization"
+    ]
   }
 ]
