@@ -16,8 +16,8 @@
     "Punchline": "Let others see you as you see yourself.",
     "IsHide": "False",
     "IsTestingExclusive": "False",
-    "DownloadLinkInstall": "https://github.com/doggjoe9/ShakSynchronous/releases/download/release/Release.zip",
-    "DownloadLinkTesting": "https://github.com/doggjoe9/ShakSynchronous/releases/download/release/Release.zip",
-    "DownloadLinkUpdate": "https://github.com/doggjoe9/ShakSynchronous/releases/download/release/Release.zip"
+    "DownloadLinkInstall": "https://github.com/doggjoe9/ShakSynchronous/releases/download/release/latest.zip",
+    "DownloadLinkTesting": "https://github.com/doggjoe9/ShakSynchronous/releases/download/release/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/doggjoe9/ShakSynchronous/releases/download/release/latest.zip"
   }
 ]
