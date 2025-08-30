@@ -31,7 +31,7 @@ public partial class IntroUi : WindowMediatorSubscriberBase
     private string _timeoutLabel = string.Empty;
     private Task? _timeoutTask;
     private string[]? _tosParagraphs;
-    private bool _useLegacyLogin = false;
+    private bool _useLegacyLogin = true;
 
     public IntroUi(ILogger<IntroUi> logger, UiSharedService uiShared, MareConfigService configService,
         CacheMonitor fileCacheManager, ServerConfigurationManager serverConfigurationManager, MareMediator mareMediator,
